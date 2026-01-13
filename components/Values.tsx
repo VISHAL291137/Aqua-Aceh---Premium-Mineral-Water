@@ -52,24 +52,24 @@ const Values: React.FC = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-blue-950 py-24 text-white overflow-hidden">
+    <section id="values" ref={sectionRef} className="bg-blue-950 py-20 md:py-24 text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className={`text-4xl font-serif text-center mb-20 transition-all duration-1000 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <h2 className={`text-3xl md:text-4xl font-serif text-center mb-16 md:mb-20 transition-all duration-1000 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           The Aqua Aceh Promise
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center md:text-left">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 text-center md:text-left">
           {values.map((v, i) => (
-            <div 
-              key={i} 
-              className={`flex flex-col items-center md:items-start group transition-all duration-1000 transform ${
+            <div
+              key={i}
+              className={`flex flex-col items-center md:items-start group transition-all duration-1000 transform cursor-pointer hover:-translate-y-2 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
               }`}
               style={{ transitionDelay: `${i * 150}ms` }}
             >
-              <div className="p-3 bg-blue-900/50 rounded-xl mb-2 group-hover:bg-blue-800 transition-colors">
+              <div className="p-3 bg-blue-900/50 rounded-xl mb-2 group-hover:bg-blue-800 transition-all group-hover:scale-110 group-hover:rotate-3">
                 {v.icon}
               </div>
-              <h3 className="text-lg font-serif mb-3 group-hover:text-blue-300 transition-colors">{v.title}</h3>
+              <h3 className="text-base md:text-lg font-serif mb-3 group-hover:text-blue-300 transition-colors">{v.title}</h3>
               <p className="text-sm text-blue-100/60 leading-relaxed">{v.desc}</p>
             </div>
           ))}

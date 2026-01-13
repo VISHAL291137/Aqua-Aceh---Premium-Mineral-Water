@@ -140,7 +140,7 @@ const Team: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-white relative">
+    <section id="products" className="py-20 md:py-24 bg-white relative">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-20">
           <div className="flex items-center justify-center space-x-2 mb-4">
@@ -150,7 +150,7 @@ const Team: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-serif text-blue-950">Refreshment Reimagined</h2>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {products.map((p) => (
             <ProductCard key={p.id} product={p} onOpen3D={setActiveProduct} />
           ))}

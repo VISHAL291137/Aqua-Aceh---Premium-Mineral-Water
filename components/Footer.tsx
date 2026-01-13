@@ -4,9 +4,9 @@ import { Send, Facebook, Twitter, Instagram, Youtube, Droplets } from 'lucide-re
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-blue-50 pt-24 pb-12 text-gray-600">
+    <footer id="footer" className="bg-blue-50 pt-20 md:pt-24 pb-12 text-gray-600">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-20">
           {/* Brand Col */}
           <div className="space-y-8">
             <div className="flex items-center space-x-2">
@@ -22,12 +22,12 @@ const Footer: React.FC = () => {
               Providing premium hydration to the people of Aceh and beyond. Sourced naturally, filtered professionally.
             </p>
             <div className="relative">
-              <input 
-                type="email" 
-                placeholder="Stay hydrated - subscribe" 
-                className="w-full bg-transparent border-b border-blue-200 py-3 text-sm focus:border-blue-600 outline-none transition-colors pr-10"
+              <input
+                type="email"
+                placeholder="Stay hydrated - subscribe"
+                className="w-full bg-transparent border-b border-blue-200 py-3 text-sm focus:border-blue-600 outline-none transition-all pr-10 hover:border-blue-400"
               />
-              <button className="absolute right-0 bottom-3 text-blue-600 hover:text-blue-900">
+              <button className="absolute right-0 bottom-3 text-blue-600 hover:text-blue-900 transition-all hover:scale-110 active:scale-95">
                 <Send size={18} />
               </button>
               <p className="text-[10px] text-gray-400 mt-3 font-medium">Get health tips and distribution updates.</p>
@@ -38,10 +38,10 @@ const Footer: React.FC = () => {
           <div className="lg:pl-12">
             <h4 className="text-blue-900 font-serif font-semibold mb-8">Navigation</h4>
             <ul className="space-y-4 text-sm font-light">
-              <li><a href="#" className="hover:text-blue-600">Our Source</a></li>
-              <li><a href="#" className="hover:text-blue-600">Quality Process</a></li>
-              <li><a href="#" className="hover:text-blue-600">Health Benefits</a></li>
-              <li><a href="#" className="hover:text-blue-600">Careers</a></li>
+              <li><a href="#" className="hover:text-blue-600 transition-all hover:translate-x-1 inline-block">Our Source</a></li>
+              <li><a href="#" className="hover:text-blue-600 transition-all hover:translate-x-1 inline-block">Quality Process</a></li>
+              <li><a href="#" className="hover:text-blue-600 transition-all hover:translate-x-1 inline-block">Health Benefits</a></li>
+              <li><a href="#" className="hover:text-blue-600 transition-all hover:translate-x-1 inline-block">Careers</a></li>
             </ul>
           </div>
 
@@ -49,10 +49,10 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-blue-900 font-serif font-semibold mb-8">Business</h4>
             <ul className="space-y-4 text-sm font-light">
-              <li><a href="#" className="hover:text-blue-600">Distribution Hubs</a></li>
-              <li><a href="#" className="hover:text-blue-600">Order Gallons</a></li>
-              <li><a href="#" className="hover:text-blue-600">Partner with Us</a></li>
-              <li><a href="#" className="hover:text-blue-600">B2B Solutions</a></li>
+              <li><a href="#" className="hover:text-blue-600 transition-all hover:translate-x-1 inline-block">Distribution Hubs</a></li>
+              <li><a href="#" className="hover:text-blue-600 transition-all hover:translate-x-1 inline-block">Order Gallons</a></li>
+              <li><a href="#" className="hover:text-blue-600 transition-all hover:translate-x-1 inline-block">Partner with Us</a></li>
+              <li><a href="#" className="hover:text-blue-600 transition-all hover:translate-x-1 inline-block">B2B Solutions</a></li>
             </ul>
           </div>
 
@@ -75,16 +75,16 @@ const Footer: React.FC = () => {
           <div className="flex items-center space-x-6">
             <span className="text-[10px] text-gray-400 font-semibold uppercase tracking-widest">Connect with Us :</span>
             <div className="flex items-center space-x-4">
-              <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white cursor-pointer hover:bg-blue-800 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white cursor-pointer hover:bg-blue-800 transition-all hover:scale-110 active:scale-95">
                 <Facebook size={14} />
               </div>
-              <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white cursor-pointer hover:bg-blue-800 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white cursor-pointer hover:bg-blue-800 transition-all hover:scale-110 active:scale-95">
                 <Twitter size={14} />
               </div>
-              <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white cursor-pointer hover:bg-blue-800 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white cursor-pointer hover:bg-blue-800 transition-all hover:scale-110 active:scale-95">
                 <Instagram size={14} />
               </div>
-              <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white cursor-pointer hover:bg-blue-800 transition-colors">
+              <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white cursor-pointer hover:bg-blue-800 transition-all hover:scale-110 active:scale-95">
                 <Youtube size={14} />
               </div>
             </div>
